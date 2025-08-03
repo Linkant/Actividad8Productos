@@ -4,7 +4,7 @@ Este proyecto es una aplicación web para gestión de inventario con un frontend
 
 ---
 
-## Estructura del proyecto
+## 📁 Estructura del proyecto
 
 - `/frontend`: Aplicación frontend creada con React y Vite.
 - `/backend`: Servidor backend en Node.js y Express.
@@ -12,71 +12,92 @@ Este proyecto es una aplicación web para gestión de inventario con un frontend
 
 ---
 
-## Requisitos previos
+## ✅ Requisitos previos
 
 - [Node.js](https://nodejs.org/) instalado (preferiblemente versión 16 o superior).
 - [MongoDB](https://www.mongodb.com/) corriendo localmente o una URI válida para conexión remota.
-- Windows (para usar el script `.bat` de inicio, aunque puedes arrancar manualmente en cualquier SO).
+- Sistema operativo Windows (para usar el script `.bat`), aunque puedes ejecutar los servidores manualmente en cualquier SO.
 
 ---
 
-## Instalación
+## ⚙️ Instalación
 
 1. Clona este repositorio:
 
    ```bash
    git clone https://github.com/tu-usuario/tu-repo.git
    cd tu-repo
-   Instala dependencias del backend:
    ```
 
-bash
-Copiar
-Editar
-cd backend
-npm install
-Instala dependencias del frontend:
+2. Instala las dependencias del backend:
 
-bash
-Copiar
-Editar
-cd ../frontend
-npm install
-Configura tus variables de entorno en .env (especialmente MONGO_URI para MongoDB).
+   ```bash
+   cd backend
+   npm install
+   ```
 
-Ejecución
-Para iniciar ambos servidores y abrir automáticamente el navegador en la URL del frontend:
+3. Instala las dependencias del frontend:
 
-En Windows, simplemente ejecuta el script:
+   ```bash
+   cd ../frontend
+   npm install
+   ```
 
-bat
-Copiar
-Editar
+4. Crea el archivo `.env` y configura las variables de entorno necesarias, especialmente `MONGO_URI` para la conexión a MongoDB.
+
+---
+
+## 🚀 Ejecución
+
+### 🔸 Opción 1: Ejecutar todo automáticamente (solo en Windows)
+
+```bat
 start-project.bat
-Alternativamente, puedes iniciar cada proyecto manualmente en consolas separadas:
+```
 
-Backend:
+Este script inicia backend y frontend y abre el navegador con la URL del frontend.
 
-bash
-Copiar
-Editar
+---
+
+### 🔸 Opción 2: Ejecutar manualmente
+
+#### Iniciar Backend
+
+```bash
 cd backend
 npm run dev
-Frontend:
+```
 
-bash
-Copiar
-Editar
+#### Iniciar Frontend
+
+```bash
 cd frontend
 npm run dev
-Uso
-El frontend estará disponible en http://localhost:5173/.
+```
 
-El backend correrá por defecto en http://localhost:5000/.
+---
 
-Tecnologías
-Frontend: React, Vite, React Router, Axios.
+## 🌐 Uso
 
-Backend: Node.js, Express, Mongoose, JWT, bcrypt.
+- El **frontend** estará disponible en: [http://localhost:5173/](http://localhost:5173/)
+- El **backend** correrá por defecto en: [http://localhost:5000/](http://localhost:5000/)
 
-Base de datos: MongoDB.
+---
+
+## 🧰 Tecnologías utilizadas
+
+### Frontend:
+- React
+- Vite
+- React Router
+- Axios
+
+### Backend:
+- Node.js
+- Express
+- Mongoose
+- JWT
+- bcrypt
+
+### Base de datos:
+- MongoDB
