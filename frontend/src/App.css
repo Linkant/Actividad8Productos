@@ -1,0 +1,93 @@
+/* Estilos base */
+:root {
+  --color-bg: #f0f0f0;
+  --color-text: #333;
+  --color-accent: #aaa;
+  --color-card: #ffffff;
+  --color-border: #ccc;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Logo y animación */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+  filter: grayscale(100%);
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em var(--color-accent));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #999);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Tarjetas */
+.card {
+  background-color: var(--color-card);
+  padding: 2em;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--color-border);
+}
+
+/* Botones */
+button {
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #444;
+}
+
+/* Texto auxiliar */
+.read-the-docs {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  padding: 0.75em;
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  margin: 0.5em 0;
+  width: 100%;
+  box-sizing: border-box;
+}
